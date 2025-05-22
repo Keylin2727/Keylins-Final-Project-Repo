@@ -131,3 +131,25 @@ p {
 .contact-list a:hover {
   text-decoration: underline;
 }
+.about-content {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-photo {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
