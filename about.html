@@ -2,9 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Keylin Mella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Keylin's Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #1f1f1f;
+      padding: 1rem 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #bbb;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: #00ffcc;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      gap: 2rem;
+    }
+
+    .about-image img {
+      width: 90%;
+      max-width: 440px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 225, 0.3);
+    }
+
+    .about-content {
+      max-width: 500px;
+    }
+
+    .about-content h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-content a {
+      color: #00ffcc;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #111;
+      color: #888;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-content h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,22 +113,26 @@
     </nav>
   </header>
 
-  <main class="about-content">
-    <h1>About Me</h1>
-
-    <img src="images/photoofme.png" alt="Photo of Keylin Mella" class="about-photo" />
-
-    <p>
-      My name is Keylin Mella, and I’m currently a 6th-semester Communication Design student with a creative vision that blends interior design, graphic design, and real estate. I use my education and experiences to explore how visual design can shape emotions, spaces, and stories.
-    </p>
-
-    <p>
-      This portfolio showcases my growth and versatility as a designer, with work spanning typography, architecture, branding, and spatial composition. Each project reflects my desire to connect creativity with purpose — whether through a conceptual poster or an urban connector design.
-    </p>
-
-    <p>
-      Outside the classroom, I’m constantly observing how people move through and respond to visual environments. That curiosity fuels everything I make — from editorial layouts to digital spaces — and drives me to keep pushing my creative boundaries.
-    </p>
+  <main class="about-section w3-row">
+    <div class="about-image w3-col l6 m6 s12">
+      <img src="images/photoofme.png" alt="Photo of Keylin" />
+    </div>
+    <div class="about-content w3-col l6 m6 s12">
+      <h1>Hi, I'm Keylin 👋</h1>
+      <p>
+        I’m a creative and passionate Communication Design major who loves blending visual storytelling with digital design. Whether I’m designing a digital ad, capturing photography, or experimenting with layouts, I’m always exploring ways to bring ideas to life.
+      </p>
+      <p>
+        Outside of school, I enjoy hitting the gym, playing games, and spending time exploring interior design and photography. My portfolio showcases not just class projects, but pieces that reflect who I am and what inspires me.
+      </p>
+      <p>
+        Take a look around and feel free to <a href="contact.html">reach out</a> if you'd like to collaborate!
+      </p>
+    </div>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Keylin Mella. All rights reserved.</p>
+  </footer>
 </body>
 </html>
