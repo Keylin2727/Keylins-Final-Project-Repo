@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Keylin Mella</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,59 +20,47 @@
   </header>
 
   <main class="gallery-content">
-    <h1>My Work</h1>
-    <div class="gallery-grid">
+    <section>
+      <h1>My Work</h1>
+      <div class="gallery-grid">
 
-  <!-- Project 1 -->
-  <div class="gallery-item">
-    <a href="project/mighty-eye.html">
-      <img src="images/themightyeye1.png" alt="The Mighty Eye">
-    </a>
-    <div class="overlay">
-      <h3>The Mighty Eye</h3>
-      <p>Editorial layout exploring design legends. COMD1257 project.</p>
-      <button onclick="openLightbox('images/themightyeye.png')">🔍 View Larger</button>
+        <a href="project/mighty-eye.html" class="gallery-item" target="_blank">
+          <img src="images/themightyeye1.png" alt="The Mighty Eye">
+          <div class="overlay">
+            <h3>The Mighty Eye</h3>
+            <p>Editorial layout exploring design legends. COMD1257 project.</p>
+          </div>
+        </a>
+
+         <div class="gallery-item">
+      <a href="project/brooks-poster.html">
+        <img src="images/brooksposter1.png" alt="Brooks Poster Preview" />
+        <div class="overlay">
+            <h3>Brooks Poster</h3>
+            <p>Soul King” concert poster for Barclays Center – Oct 2024.</p>
+          </div>
+        <div class="gallery-caption">Brooks Poster</div>
+      </a>
     </div>
-  </div>
 
-  <!-- Project 2 -->
-  <div class="gallery-item">
-    <a href="project/brooks-poster.html">
-      <img src="images/brooksposter.png" alt="Brooks Poster">
-    </a>
-    <div class="overlay">
-      <h3>Brooks Poster</h3>
-      <p>“Soul King” concert poster for Barclays Center – Oct 2024.</p>
-      <button onclick="openLightbox('images/brooksposter.png')">🔍 View Larger</button>
-    </div>
-  </div>
+        <a href="project/la-trenta.html" class="gallery-item" target="_blank">
+          <img src="images/latrenta1.png" alt="La Trenta Project">
+          <div class="overlay">
+            <h3>La Trenta – Sprouting Arms</h3>
+            <p>Public connector design for ARCH 1121 in Brooklyn, NY.</p>
+          </div>
+        </a>
 
-  <!-- Project 3 -->
-  <div class="gallery-item">
-    <a href="project/la-trenta.html">
-      <img src="images/latrenta.png" alt="La Trenta Project">
-    </a>
-    <div class="overlay">
-      <h3>La Trenta – Sprouting Arms</h3>
-      <p>Public connector design for ARCH 1121 in Brooklyn, NY.</p>
-      <button onclick="openLightbox('images/latrenta.png')">🔍 View Larger</button>
-    </div>
-  </div>
+        <a href="project/misdirection.html" class="gallery-item" target="_blank">
+          <img src="images/misdirection1.png" alt="Misdirection Project">
+          <div class="overlay">
+            <h3>Misdirection – Vertical Stage</h3>
+            <p>High Line connector design concept emphasizing path and flow.</p>
+          </div>
+        </a>
 
-  <!-- Project 4 -->
-  <div class="gallery-item">
-    <a href="project/misdirection.html">
-      <img src="images/misdirection.png" alt="Misdirection Project">
-    </a>
-    <div class="overlay">
-      <h3>Misdirection – Vertical Stage</h3>
-      <p>High Line connector design concept emphasizing path and flow.</p>
-      <button onclick="openLightbox('images/misdirection.png')">🔍 View Larger</button>
-    </div>
-  </div>
-
-</div>
-
+      </div>
+    </section>
   </main>
 
   <script src="js/lightbox.js"></script>
