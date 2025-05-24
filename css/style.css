@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
   margin: 0;
@@ -96,60 +97,122 @@ p {
   font-size: 0.8rem;
 }
 
-.about-content,
-.contact-content {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  color: #e0e0e0;
-  line-height: 1.6;
-  text-align: center;
+
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 1rem; /* Reduced gap */
+  }
+
+  .about-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-end; /* Align closer to text */
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px; /* You can adjust this if needed */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-content {
+    flex: 1 1 55%;
+    /* Removed max-width to allow closer alignment */
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-image,
+    .about-content {
+      flex: 1 1 100%;
+      justify-content: center;
+    }
+
+    .about-image img {
+      margin-bottom: 1rem;
+    }
+  }
+ /* GALLERY SECTION */
+
+.gallery-section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.about-content h1,
-.contact-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+  gap: 2rem;
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
+.gallery-item {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact-list li {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;  /* Force square */
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
-.contact-list a {
-  color: #00ffcc;
-  text-decoration: none;
+/* Specific hover effect for brooksposter3.png */
+.gallery-item img[src*="brooksposter3.png"]:hover {
+  transform: scale(1.08);
 }
 
-.contact-list a:hover {
-  text-decoration: underline;
+.gallery-caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 100%;
+  color: #aaa; /* More subtle */
+  font-style: italic;
+  line-height: 1.4;
 }
-.about-content {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  color: #e0e0e0;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.about-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-photo {
-  max-width: 200px;
-  border-radius: 50%;
-  margin: 2rem auto;
-  display: block;
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+/* PROJECT PAGE STYLES */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 1.5rem;
+  justify-items: center;
 }
 
+.project-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keep square shape */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(255, 193, 7, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-grid img:hover {
+  transform: scale(1.05);
+}
