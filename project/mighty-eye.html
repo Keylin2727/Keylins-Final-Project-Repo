@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Mighty Eye | Keylin Mella</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 1rem;
+    }
+    header nav {
+      background-color: #1f1f1f;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #bbb;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: #f9a825;
+    }
+    main.project-content {
+      max-width: 960px;
+      margin: 0 auto 3rem;
+    }
+    .project-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .project-images-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(249, 168, 37, 0.5);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-content">
+    <div class="project-description">
+      <h1>The Mighty Eye</h1>
+      <p>
+        A multi-page editorial layout designed for COMD1257 (Typographic Design) at NYCCT. This project reviews powerful voices in visual communication, including Anish Kapoor, April Greiman, Cindy Sherman, Emory Douglas, and more. The goal was to explore typographic storytelling while showcasing key figures in art and design history.
+      </p>
+    </div>
+
+    <div class="project-images-grid">
+      <!-- All 16 project images -->
+      <img src="../images/themightyeye1.png" alt="The Mighty Eye Image 1" class="project-image" />
+      <img src="../images/themightyeye2.png" alt="The Mighty Eye Image 2" class="project-image" />
+      <img src="../images/themightyeye3.png" alt="The Mighty Eye Image 3" class="project-image" />
+      <img src="../images/themightyeye4.png" alt="The Mighty Eye Image 4" class="project-image" />
+      <img src="../images/themightyeye5.png" alt="The Mighty Eye Image 5" class="project-image" />
+      <img src="../images/themightyeye6.png" alt="The Mighty Eye Image 6" class="project-image" />
+      <img src="../images/themightyeye7.png" alt="The Mighty Eye Image 7" class="project-image" />
+      <img src="../images/themightyeye8.png" alt="The Mighty Eye Image 8" class="project-image" />
+      <img src="../images/themightyeye9.png" alt="The Mighty Eye Image 9" class="project-image" />
+      <img src="../images/themightyeye10.png" alt="The Mighty Eye Image 10" class="project-image" />
+      <img src="../images/themightyeye11.png" alt="The Mighty Eye Image 11" class="project-image" />
+      <img src="../images/themightyeye12.png" alt="The Mighty Eye Image 12" class="project-image" />
+      <img src="../images/themightyeye13.png" alt="The Mighty Eye Image 13" class="project-image" />
+      <img src="../images/themightyeye14.png" alt="The Mighty Eye Image 14" class="project-image" />
+      <img src="../images/themightyeye15.png" alt="The Mighty Eye Image 15" class="project-image" />
+      <img src="../images/themightyeye16.png" alt="The Mighty Eye Image 16" class="project-image" />
+    </div>
+  </main>
+</body>
+</html>
