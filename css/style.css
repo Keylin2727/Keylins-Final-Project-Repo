@@ -12,6 +12,35 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
 }
+#hello{
+  background-image: url('https://i.pinimg.com/1200x/0e/e9/d0/0ee9d0b8b2558f163673bd6a1567d8f4.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: dark overlay for readability */
+#hello::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+}
 
 nav {
   background-color: #1f1f1f;
